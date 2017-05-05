@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<title> Il était une histoire </title>
+		<li<link type='text/css' rel='stylesheet' href='stylesheet.css'/>
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans"/>
+	</head>
+	<body>
+		<h1> Première histoire </h1>
+		<p> Il était une fois, dans une contrée lointaine, une jeune fille nommée {} qui vivait avec ses parents et son frère () <br />
+		Un jour, en rentrant d'une balade sur son cheval Chocolat avec son père. Quand tout à coup celui-ci tomba et perdit connaissance. Le lendemain, un médecin l'éxamina. Il était très malade. Il ne lui restait plus longtemps à vivre. Sa mère était éffondrée. {} jura de rester auprès de lui jusqu'au dernier moment de sa vie. Et ce triste jour arriva.
+		{} était tellement triste qu'elle décida de partir, partir loin et trouver un lieu à elle, un lieu où elle se reccueillerait de la mort de son père. Elle était inconsolable, sa mère et () s'inquietait. <br />
+		Un jour, alors qu'elle était dans ce lieu si précieux pour elle, {} entendit un bruit, inquiète, elle monta sur son cheval et galopa. Quand tout à coup, son cheval pris peur et s'enfuit. Affolée, elle se mit a pleuré. Quelqu'un arriva, un jeune homme sur un cheval tout blanc. Elle hurla de partir, de la laisser seule. L'homme ne bougeait pas. Il descendit de son cheval,{} continuait son discours "Pars je te dis, pars !" <br />
+		Il s'approcha pris sa main {} étonnée ne dis rien. Il la releva, la pris dans ses bras et lui dit "Courage, quoi qu'il s'est passé tu es plus forte que sa." Puis, partit sans dire un mot de plus.{} bouleversée, chercha son cheval le trouva au détour d'une rivière et rentra au château. Elle raconta toute son histoire à () son fidèle confident. Il était si attentif qu'il ne lui dit rien quand elle eût finit son histoire. Son frère étonné lui dit : "N'as-tu pas cherché à le retrouver à savoir qui il était ? <br />
+		A la suite de ces paroles, {} décida qu'elle irait régulièrement près de la rivière pour retrouver se mystérieux jeune homme. <br />
+		Des jours passèrent, {} commençait a desespérée. Puis un jour elle vit son cheval blanc son beau cheval tout blanc. Encore une fois, éffrayée par un par un bruit, elle prit peur mais ce n'était rien mis à part lui qui arrivait là, devant elle. Elle lui avoua que pendant des jours, elle le chercha, il lui avoua que lui avait peur de la rencontre. <br />
+		Ils discutèrent pendant plusieures heures et plusieurs jours. Ils avaient les mêmes goûts, la même façon de voir les choses. <br />
+		Un beau jour, alors qu'ils s'étaient donné rendez-vous pour manger, elle lui avoua tout, qu'elle l'apprecia et même qu'elle l'aimait. Il sourit et {} crût qu'il se moquait d'elle, vexée, elle voulut partir. Il l'arrêta, la pris dans ses bras et lui chuchota a l'oreille "Je t'aime". </p>
+
+		<h1> Deuxième histoire </h1>
+		<p> Comme tout les jours, depuis de nombreuses années, [] joue avec Brutus, son chien. C'est son meilleur ami, le seul sur qui il peut compter, celui qui ne laissera pas tomber en dehors de sa famille (sa soeur {} et sa mère). Depuis une amitié brisé, [] se jura de ne plus souffrir. <br />
+		Un week-end banal, semblabe aux autres, [] pris son Jack Russell, Brutus et parti pour une longue balade en forêt. Quand tout à coup, un chien aboya au loin, Brutus se mit a courrir de plus en plus vite. [] était à bout de souffle et ne comprenais pourquoi son chien réagissais de la sorte. Arrivé près d'une demeure, Brutus s'arrêta. [] surpris chercha une raison de cette course. <br />
+		Au loin il vit un jeune homme avec un bullbod s'approchant. [] n'aimant pas les rencontre cherchait une échappatoire mais n'en trouvit pas. Le jeune homme s'approcha de plus en plus et se présenta devant [] et lui dit : <br />
+		"Hey comment s'appelle ton chien ?" <br />
+		"Brutus car il m'a toujours protéger." <br />
+		"Oh, c'est rigolo mon bouledogue s'appelle Chance car grâce à elle j'ai toujours fait des choses extraordinaire. Peut être que c'est grâce à elle qu'on s'est rencontré." <br />
+		[] rigola et répondit :"Oui peut-être." <br />
+		Le jeune homme avant de partir se présenta. Il se nommait Jeff. Au fur et à mesure, [] et Jeff se voyait de plus en plus. Ils commençaient à vraiment être proche. Jeff, un jour, lui avoua que sa dernière amitié s'était très mal terminé. Attentif et touché, [] l'écoutais. Quand il eut finit, il lui raconta de même son histoire. Touchés par leur point en commun, ils décidèrent de se retrouver tout les jours pour jouer avec Brutus et Chance. 
+			<div id="question"></div><div id="prop"></div>
+			
+			<script type="text/javascript">
+			
+		var questions = {
+			question: "Qui est marie ?",
+			choices: [
+			"une princesse",
+			"Un ogre", 
+			"La soeur de Jack" 
+			],
+			correctAnswer: "la soeur de jack"
+			}
+			var text = '<form action="quizz">' ;
+				
+
+			for (q in questions.choices) {
+				text += '<input type="radio" name="quizz" value="' + questions.choices[q] + '">' + questions.choices[q] ;
+			}
+			text += "</form>" ;
+			document.getElementById('question').innerHTML = questions.question
+			document.getElementById('prop').innerHTML = text
+	</script>
+
+		
+			<div class='button' id='next'><a href='#'>Next</a></div>
+    		<div class='button' id='prev'><a href='#'>Prev</a></div>
+    		<div class='button' id='start'> <a href='#'>Start Over</a></div>
+			
+			<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+			<script type="text/javascript" src='questions.json'></script>
+			<script type='text/javascript' src='jsquiz.js'></script>
